@@ -1,0 +1,8 @@
+build:
+  version: 2.1
+
+loans:
+  contact:
+    name: "qa"
+    email: "qa-loans@qa.com"
+  message: "This is Loans service using QA env"

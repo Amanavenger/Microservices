@@ -1,0 +1,8 @@
+build:
+  version: 2.1
+
+cards:
+  contact:
+    name: "qa"
+    email: "qa-cards@qa.com"
+  message: "This is Cards service using QA env"
