@@ -18,7 +18,8 @@ services:
       service: microservice-base-config
     depends_on:
       configserver:
-        condition: service_completed_successfully
+        condition: service_healthy
     environment:
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
       SPRING_PROFILES_ACTIVE: default
+      SPRING_RABBITMQ_HOST: rabbit

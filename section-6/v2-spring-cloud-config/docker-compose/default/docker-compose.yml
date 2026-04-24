@@ -40,9 +40,11 @@ services:
     container_name: configserver-ms
     ports:
       - "8071:8071"
+    environment:
+      SPRING_RABBITMQ_HOST: "rabbit"
     depends_on:
       rabbit:
-        condition: service_completed_successfully
+        condition: service_healthy
     healthcheck:
       test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
       interval: 10s
