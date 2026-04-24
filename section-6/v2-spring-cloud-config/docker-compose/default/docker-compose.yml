@@ -40,8 +40,6 @@ services:
     container_name: configserver-ms
     ports:
       - "8071:8071"
-    environment:
-      SPRING_RABBITMQ_HOST: "rabbit"
     depends_on:
       rabbit:
         condition: service_healthy

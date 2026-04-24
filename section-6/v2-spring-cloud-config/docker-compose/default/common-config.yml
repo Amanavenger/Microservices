@@ -11,6 +11,8 @@ services:
       resources:
         limits:
           memory: 700m
+    environment:
+      SPRING_RABBITMQ_HOST: rabbit
 
 
   microservice-configserver-config:
@@ -22,4 +24,3 @@ services:
     environment:
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
       SPRING_PROFILES_ACTIVE: default
-      SPRING_RABBITMQ_HOST: rabbit
