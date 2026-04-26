@@ -1,0 +1,16 @@
+#spring:
+#  config:
+#    activate:
+#      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "This Is Demo Message for ConfigurationProperties (Prod env)"
+  contactDetails:
+    name: "prod-Developer"
+    email: "demoaccount@mail.com"
+  onCallSupport:
+    - 91 001 001 002
+    - 91 002 003 004

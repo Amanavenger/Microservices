@@ -1,0 +1,16 @@
+#spring:
+#  config:
+#    activate:
+#      on-profile: "qa"
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "This Is Demo Message for ConfigurationProperties (QA env)"
+  contactDetails:
+    name: "qa-Developer"
+    email: "demoaccount@mail.com"
+  onCallSupport:
+    - 91 001 001 002
+    - 91 002 003 004

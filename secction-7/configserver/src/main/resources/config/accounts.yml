@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: accounts
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+
+
+
+build:
+  version: "3.0"
+
+accounts:
+  message: "This Is Demo Message for ConfigurationProperties"
+  contactDetails:
+    name: "demo-Developer"
+    email: "demoaccount@mail.com"
+  onCallSupport:
+    - 91 001 001 002
+    - 91 002 003 004
+
+
